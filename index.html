@@ -2654,7 +2654,25 @@ readButton.addEventListener(
 
 
         /* ================================================
+           HIỆN HỘP THOẠI NGAY
+        ================================================ */
+
+        setTimeout(
+            () => {
+
+                choiceOverlay.classList.add(
+                    "show"
+                );
+
+            },
+
+            500
+        );
+
+
+        /* ================================================
            GHI NHẬN ĐÃ ĐỌC
+           Firebase chạy phía sau
         ================================================ */
 
         try {
@@ -2694,22 +2712,8 @@ readButton.addEventListener(
 
         }
 
-
-        setTimeout(
-            () => {
-
-                choiceOverlay.classList.add(
-                    "show"
-                );
-
-            },
-
-            500
-        );
-
     }
 );
-
 
 /* =====================================================
    CẢM ƠN ANH
