@@ -1033,7 +1033,7 @@ const firebaseConfig = {
 ===================================================== */
 
 const ADMIN_UID =
-    "HkITtKLFJ9VOHuyut0u5dlNfSo72";
+    "";
 
 
 /* =====================================================
@@ -1343,7 +1343,7 @@ onAuthStateChanged(
 
         if (
             user.uid !==
-            HkITtKLFJ9VOHuyut0u5dlNfSo72
+            ADMIN_UID
         ) {
 
             await signOut(auth);
